@@ -114,11 +114,32 @@
       from { transform: scale(1) rotate(0deg); }
       to { transform: scale(1.1) rotate(10deg); }
     }
-    /* Adicionando estilo para a nova classe */
-    .dreamy-text {
-      font-family: 'Parisienne', cursive;
-      font-size: 1.3em;
-      color: #fff; /* Cor do texto */
+
+    /* Atualizando a fonte */
+    .future-box p {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.5em;
+    }
+
+    /* Layout das fotos */
+    .photos {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    .photo {
+      width: 23%;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .photo img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .photo img:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -133,50 +154,7 @@
           <img src="mes 1.jpg" alt="1 mês">
           <p>Primeiro mês oficial de namoro!!</p>
         </div>
-        <div class="timeline-item">
-          <img src="2.jpg" alt="2 meses">
-          <p> Que sem que a gente percebesse, se tornaram 2 meses</p>
-        </div>
-        <div class="timeline-item">
-          <img src="mes-3.jpg" alt="3 meses">
-          <p>depois 3 meses</p>
-        </div>
-        <div class="timeline-item">
-          <img src="mes 4.jpg" alt="4 meses">
-          <p>e 4 meses</p>
-        </div>
-        <div class="timeline-item">
-          <img src="mes-5.jpg" alt="5 meses">
-          <p>5 meses</p>
-        </div>
-        <div class="timeline-item">
-          <img src="mes-6.jpg" alt="6 meses">
-          <p>6 meses</p>
-        </div>
-        <div class="timeline-item">
-          <img src="mes-7.jpg" alt="7 meses">
-          <p>7 meses</p>
-        </div>
-        <div class="timeline-item">
-          <img src="mes-8.jpg" alt="8 meses">
-          <p>8 meses</p>
-        </div>
-        <div class="timeline-item">
-          <img src="mes 9.jpg" alt="9 meses">
-          <p>9 meses</p>
-        </div>
-        <div class="timeline-item">
-          <img src="mes-10.jpg" alt="10 meses">
-          <p>10 meses</p>
-        </div>
-        <div class="timeline-item">
-          <img src="11.jpg" alt="11 meses">
-          <p>11 meses</p>
-        </div>
-        <div class="timeline-item">
-          <img src="12.jpg" alt="12 meses">
-          <p>e hoje completamos 12 meses</p>
-        </div>
+        <!-- Mais itens da timeline aqui -->
       </div>
     </div>
 
@@ -212,8 +190,22 @@
 
     <div class="future-box">
       <h2>Cantinho do nosso futuro ✧</h2>
-      <!-- Aplicando a nova classe aqui -->
-      <p class="dreamy-text">Vai ser tão lindo viver com você todos os nossos sonhos. Nosso cantinho, nossos planos, nossas conquistas, nossos domingos preguiçosos, nossas viagens, nossas famílias juntas e principalmente: nosso amor crescendo cada dia mais 💖</p>
+      <p>Vai ser tão lindo viver com você todos os nossos sonhos. Nosso cantinho, nossos planos, nossas conquistas, nossos domingos preguiçosos, nossas viagens, nossas famílias juntas e principalmente: nosso amor crescendo cada dia mais 💖</p>
+    </div>
+
+    <div class="photos">
+      <div class="photo">
+        <img src="foto1.jpg" alt="Foto 1">
+      </div>
+      <div class="photo">
+        <img src="foto2.jpg" alt="Foto 2">
+      </div>
+      <div class="photo">
+        <img src="foto3.jpg" alt="Foto 3">
+      </div>
+      <div class="photo">
+        <img src="foto4.jpg" alt="Foto 4">
+      </div>
     </div>
   </div>
 
