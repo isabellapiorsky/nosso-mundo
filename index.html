@@ -120,6 +120,39 @@
       font-size: 1.3em;
       color: #fff; /* Cor do texto */
     }
+    .image-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.images img {
+  width: 30%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+.image-caption {
+  font-size: 1.1em;
+  color: #fff;
+  font-family: 'Parisienne', cursive;
+  margin-top: 10px;
+}
   </style>
 </head>
 <body>
@@ -215,7 +248,17 @@
       <p class="dreamy-text">Vai ser tão lindo viver com você todos os nossos sonhos. Nosso cantinho, nossos planos, nossas conquistas, nossos domingos preguiçosos, nossas viagens e, principalmente, o nosso amor crescendo cada dia mais 💖</p>
     </div>
   </div>
-
+<div class="image-section">
+  <div class="images">
+    <img src="1.JPG" alt="Imagem 1" />
+    <img src="2 (1).jpg" alt="Imagem 2" />
+    <img src="3.jpg" alt="Imagem 3" />
+    <img src="4.jpg" alt="Imagem 4" />
+    <img src="5.jpg" alt="Imagem 5" />
+    <img src="6.JPG" alt="Imagem 6" />
+  </div>
+  <p class="image-caption">Mesmo se nosso futuro não se parecer com essas imagens, eu sou feliz de viver a vida com você meu bem :) </p>
+</div>
   <script>
     function mostrar(id) {
       var el = document.getElementById(id);
