@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosso Mundo Secreto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #1b1b2f, #162447);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #e43f5a;
+    }
+    .section {
+      margin: 40px 0;
+    }
+    .box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .star {
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #f9d342;
+    }
+    .hidden {
+      display: none;
+      margin-top: 15px;
+    }
+    a {
+      color: #f9d342;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vinda ao Nosso Mundo 🕸️</h1>
+
+  <div class="section">
+    <div class="box">
+      <h2>Linha do Tempo</h2>
+      <p>✨ 25/04/24 - Nosso primeiro ano completo juntos<br />
+         ✨ A primeira vez que rimos por nada<br />
+         ✨ A vez que você disse que me amava e o mundo parou 🌎
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>Clique em uma estrela ✨</h2>
+      <div>
+        <div class="star" onclick="mostrar('msg1')">⭐</div>
+        <div class="star" onclick="mostrar('msg2')">🌟</div>
+        <div class="star" onclick="mostrar('msg3')">💫</div>
+      </div>
+      <div id="msg1" class="hidden">Você é o meu lugar favorito no universo. Eu te amo mais do que consigo explicar.</div>
+      <div id="msg2" class="hidden">Se eu fosse um herói, você seria o meu poder secreto. Te amo, minha aranhinha 🕸️💘</div>
+      <div id="msg3" class="hidden">Nosso amor é mais forte do que qualquer vilão. E mesmo nos dias difíceis, eu escolho você.</div>
+    </div>
+
+    <div class="box">
+      <h2>Trilha Sonora do Multiverso 🎧</h2>
+      <p><a href="https://open.spotify.com" target="_blank">Ouça nossa playlist secreta</a></p>
+    </div>
+
+    <div class="box">
+      <h2>Galeria Secreta</h2>
+      <p>✨ "Cada pedacinho desse site é uma lembrança nossa disfarçada.<br />
+         Você consegue decifrar todas elas, amor?" 💌
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function mostrar(id) {
+      var el = document.getElementById(id);
+      el.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
