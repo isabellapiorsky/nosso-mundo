@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nosso Mundo Secreto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -14,8 +15,12 @@
       padding: 20px;
     }
     h1 {
-      font-size: 2.5em;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
       color: #fff;
+    }
+    h2 {
+      color: #e43f5a;
     }
     .section {
       margin: 40px 0;
@@ -25,8 +30,31 @@
       border-radius: 15px;
       padding: 20px;
       margin: 20px auto;
-      max-width: 600px;
+      max-width: 700px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      background-color: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      padding: 10px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .timeline-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 15px;
     }
     .star {
       font-size: 1.5em;
@@ -51,11 +79,57 @@
 
   <div class="section">
     <div class="box">
-      <h2>Linha do Tempo</h2>
-      <p>✨ 25/04/24 - Nosso primeiro ano completo juntos<br />
-         ✨ A primeira vez que rimos por nada<br />
-         ✨ A vez que você disse que me amava e o mundo parou 🌎
-      </p>
+      <h2>Linha do Tempo - 12 Meses de Amor</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_1" alt="1 mês">
+          <p>1 mês</p>
+        </div>
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_2" alt="2 meses">
+          <p>2 meses</p>
+        </div>
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_3" alt="3 meses">
+          <p>3 meses</p>
+        </div>
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_4" alt="4 meses">
+          <p>4 meses</p>
+        </div>
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_5" alt="5 meses">
+          <p>5 meses</p>
+        </div>
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_6" alt="6 meses">
+          <p>6 meses</p>
+        </div>
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_7" alt="7 meses">
+          <p>7 meses</p>
+        </div>
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_8" alt="8 meses">
+          <p>8 meses</p>
+        </div>
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_9" alt="9 meses">
+          <p>9 meses</p>
+        </div>
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_10" alt="10 meses">
+          <p>10 meses</p>
+        </div>
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_11" alt="11 meses">
+          <p>11 meses</p>
+        </div>
+        <div class="timeline-item">
+          <img src="URL_DA_FOTO_12" alt="12 meses">
+          <p>12 meses</p>
+        </div>
+      </div>
     </div>
 
     <div class="box">
@@ -65,21 +139,27 @@
         <div class="star" onclick="mostrar('msg2')">🌟</div>
         <div class="star" onclick="mostrar('msg3')">💫</div>
       </div>
-      <div id="msg1" class="hidden">Você é o meu lugar favorito no universo. Eu te amo mais do que consigo explicar<3</div>
-      <div id="msg2" class="hidden">Eu me apaixono por você todos os dias, obrigada por tudo meu neném 💘</div>
-      <div id="msg3" class="hidden">Feliz 365 dias de nós duas!</div>
+      <div id="msg1" class="hidden">Você é o meu lugar favorito no universo. Eu te amo mais do que consigo explicar.</div>
+      <div id="msg2" class="hidden">Se eu fosse um herói, você seria o meu poder secreto. Te amo, minha aranhinha 🕸️💘</div>
+      <div id="msg3" class="hidden">Nosso amor é mais forte do que qualquer vilão. E mesmo nos dias difíceis, eu escolho você.</div>
     </div>
 
     <div class="box">
-      <h2>Trilha Sonora do Multiverso 🎧</h2>
-      <p><a href="https://open.spotify.com" target="_blank">Ouça nossa playlist secreta</a></p>
+      <h2>🗺️ Mapa de Memórias</h2>
+      <p><a href="https://docs.google.com/document/d/1..." target="_blank">Clique aqui para ver nosso mapa cheio de momentos especiais</a></p>
     </div>
 
     <div class="box">
-      <h2>Galeria Secreta</h2>
-      <p>✨ "Cada pedacinho desse site é uma lembrança nossa disfarçada.<br />
-         Você consegue decifrar todas elas, amor?" 💌
-      </p>
+      <h2>🔐 Cofre de Segredos</h2>
+      <p>Clique nos ícones abaixo para desbloquear mensagens escondidas 💌</p>
+      <div>
+        <div class="star" onclick="mostrar('segredo1')">💖</div>
+        <div class="star" onclick="mostrar('segredo2')">🔒</div>
+        <div class="star" onclick="mostrar('segredo3')">🕯️</div>
+      </div>
+      <div id="segredo1" class="hidden">Você me ensinou o que é ser amado de verdade.</div>
+      <div id="segredo2" class="hidden">Não importa o universo, eu escolheria você em todos.</div>
+      <div id="segredo3" class="hidden">Um dia, vamos olhar pra esse site e sorrir sabendo que tudo valeu a pena.</div>
     </div>
   </div>
 
