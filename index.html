@@ -4,8 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nosso Mundo Secreto</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'Copeland';
+      src: url('Copeland.otf') format('opentype');
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -14,18 +19,29 @@
       text-align: center;
       padding: 20px;
     }
+
     h1 {
       font-family: 'Great Vibes', cursive;
       font-size: 3em;
       color: #fff;
     }
+    
     h2 {
       color: #e43f5a;
-      font-size: 2em;
+      font-size: 2em;  /* Aumenta o tamanho do título */
     }
+
+    .surpresa {
+      font-family: 'Copeland', sans-serif;
+      font-size: 1.4em;
+      color: #fff;
+      line-height: 1.5;
+    }
+
     .section {
       margin: 40px 0;
     }
+
     .box {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 15px;
@@ -34,12 +50,14 @@
       max-width: 700px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
+
     .timeline {
       display: flex;
       flex-direction: column;
       gap: 20px;
       align-items: center;
     }
+
     .timeline-item {
       display: flex;
       align-items: center;
@@ -50,69 +68,59 @@
       max-width: 600px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
+
     .timeline-item img {
-      width: 200px;
-      height: 200px;
+      width: 200px;  /* Aumenta a largura */
+      height: 200px; /* Aumenta a altura */
       object-fit: cover;
       border-radius: 10px;
       margin-right: 15px;
-      transition: transform 0.3s ease;
     }
-    .timeline-item img:hover {
-      transform: scale(1.05);
-    }
+
     .timeline-item p {
-      font-size: 14px;
+      font-size: 1.2em;  /* Ajustado para celular */
       color: #fff;
-      text-align: left;
     }
+
     .star {
       font-size: 1.5em;
       cursor: pointer;
       color: #f9d342;
     }
+
     .hidden {
       display: none;
       margin-top: 15px;
     }
+
     a {
       color: #f9d342;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    .future-box {
-      background: linear-gradient(145deg, #6a0572, #ab83a1);
-      color: white;
+
+    .cantinho {
+      background: #7367F0;
+      color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 30px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .cantinho h2 {
       font-family: 'Parisienne', cursive;
-      padding: 30px;
-      border-radius: 20px;
-      margin-top: 50px;
-      position: relative;
-      overflow: hidden;
+      font-size: 2.5em;
     }
-    .future-box::before {
-      content: "✨";
-      font-size: 80px;
-      color: rgba(255, 255, 255, 0.2);
-      position: absolute;
-      top: -20px;
-      left: 20px;
-      animation: twinkle 2s infinite alternate;
-    }
-    .future-box::after {
-      content: "🌙";
-      font-size: 60px;
-      color: rgba(255, 255, 255, 0.15);
-      position: absolute;
-      bottom: -10px;
-      right: 30px;
-      animation: twinkle 3s infinite alternate;
-    }
-    @keyframes twinkle {
-      from { transform: scale(1) rotate(0deg); }
-      to { transform: scale(1.1) rotate(10deg); }
+    
+    .cantinho p {
+      font-family: 'Copeland', sans-serif;
+      font-size: 1.4em;
+      color: #fff;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -188,25 +196,11 @@
 
     <div class="box">
       <h2>Surpresa ᯓ★</h2>
-      <p><a href="carta'pdf.pdf" target="_blank">clique aqui</a></p>
+      <p><a href="carta'pdf.pdf" target="_blank">Clique aqui</a></p>
     </div>
 
-    <div class="box">
-      <h2>🔐 Cofre de Segredos</h2>
-      <p>Clique nos ícones abaixo para desbloquear mensagens escondidas 💌</p>
-      <div>
-        <div class="star" onclick="mostrar('segredo1')">💖</div>
-        <div class="star" onclick="mostrar('segredo2')">🔒</div>
-        <div class="star" onclick="mostrar('segredo3')">🕯️</div>
-      </div>
-      <div id="segredo1" class="hidden">Você me ensinou o que é ser amada de verdade.</div>
-      <div id="segredo2" class="hidden">Não importa o universo, saiba que eu escolheria você em todos eles.</div>
-      <div id="segredo3" class="hidden">Eu te amo demais !!!</div>
-    </div>
-
-    <div class="future-box">
-      <h2>Cantinho do nosso futuro ✧</h2>
-      <p>Vai ser tão lindo viver com você todos os nossos sonhos. Nosso cantinho, nossos planos, nossas conquistas, nossos domingos preguiçosos, nossas viagens, nossas famílias juntas e principalmente: nosso amor crescendo cada dia mais 💖</p>
+    <div class="box cantinho">
+      <h2>Vai ser tão lindo viver com você todos os nossos sonhos. Nosso cantinho, nossos planos, nossas conquistas, nossos domingos preguiçosos, nossas viagens, nossas famílias juntas e principalmente: nosso amor crescendo cada dia mais 💖</h2>
     </div>
   </div>
 
